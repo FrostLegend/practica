@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    min-height: 100vh; /* Con el flex y esto centra la calculadora verticalmente*/
+}
+
+#calculadora {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb(80, 80, 80);
+    padding: 10px;
+    max-width: 250px;
+    margin: auto; /* Centra horizontalmente la calculadora*/
+    border-radius: 10px;
+}
+
+#pantalla{
+    grid-column: 1 / span 4;
+    padding: 25px;
+    text-align: left;
+    background-color: #414141;
+    border-radius: 10px;
+    border: solid #414141;
+    color: white;
+}
+
+.boton {
+    background-color: #6b6b6b;
+    padding: 12.5px;
+    border-radius: 10px;
+    color: white;
+}
